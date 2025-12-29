@@ -1,44 +1,76 @@
-Codeforces WhatsApp Bot
+
+# CodeForces WhatsApp Bot 🤖
 
 A WhatsApp bot built using whatsapp-web.js that helps competitive programmers track their Codeforces progress — directly inside group chats.
 
-This bot lets users register their Codeforces handles and instantly fetch useful details like ratings, contest performance, and upcoming contests. Perfect for coding clubs, college groups, or competitive programming communities.
+This bot lets users register their Codeforces handles and instantly fetch useful details like ratings, contest performance, and upcoming contests. Perfect for coding clubs, college groups, or competitive programming communities.💬
 
-⭐ Features
+To chat with the bot click [here](https://wa.me/919068666560?text=/help)
 
-➕ Add / remove Codeforces handles per WhatsApp group
+## Features 🚀
 
-📊 Leaderboard view based on live Codeforces ratings
+✅ Get contest performance of all users present in the group. 📊
 
-🏁 Contest performance tracking for registered users
+✅ Users can be added or removed from the group. ➕ 
 
-🗓 Upcoming contest reminders (time shown in IST)
+✅ Get a list and ratings of all users present in the group. 📋
 
-🔎 Smart /check command
+✅ Get details of upcoming contests. 🗓
 
-detects duplicate handles
+## Available Commands 💻
 
-fixes capitalization/name changes
+This bot provides the following commands: 📢
 
-removes invalid / deleted users automatically
+- `/help or /start`: Displays the help message including details and use of each command.
+- `/contest`: Sends a list of upcoming CodeForces contests.
+- `/add user_handle`: Adds CodeForces handles to the list.
+- `/delete user_handle`: Removes CodeForces handles from the list.
+- `/perf CONTEST_ID`: Sends the performance of all users in the specified contest.
+- `/ratings`: Sends the ratings of all users in the group.
+- `/check`: Deletes the invalid handles and update handle of user in database automatically if it has been changed. 
 
-🛠 Tech Stack
+Feel free to customize or enhance the bot as per your requirements! 🔧
 
-Node.js
+## Installation 💻
 
-whatsapp-web.js
+To install the required dependencies, run the following command:
 
-Axios (Codeforces API)
+```sh
+npm install whatsapp-web.js qrcode-terminal
+npm install axios
+npm install lowdb@1
+npm install puppeteer 
+```
 
-LowDB (JSON-based storage)
 
-QR authentication via WhatsApp Web
+## Getting Started 🚀
+1. Clone this repository.
+2. Install the dependencies mentioned above.
+3. Run the bot using the following command:
 
-🚀 Commands
-/start or /help   – Show help menu
-/add [handle]     – Add user to group list
-/delete [handle]  – Remove user
-/ratings          – Show leaderboard
-/perf [contestID] – Contest ranks for group members
-/contest          – Upcoming Codeforces contests
-/check            – Clean, verify & auto-update handles
+```sh
+node wabot.js
+```
+
+Now, you will be asked to scan a QR code from the whatsapp number which you would like to make your BOT,if you don't have any you can use bot [here](https://wa.me/919068666560?text=/help) directly.You may also add this bot number to groups to compete with your peeps.
+
+## Acknowledgements
+
+This project wouldn't have been possible without the invaluable contribution of the `whatsapp-web.js` library. I would like to express my sincere gratitude to the developers of `whatsapp-web.js` for providing a powerful and reliable library for building WhatsApp bots.
+
+Special thanks to the team behind `whatsapp-web.js` for their continuous efforts in maintaining and improving the library, as well as the open-source community for their support and contributions.
+
+Repository Link: [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
+## Closing Remarks
+
+Thank you for checking out this WhatsApp Bot repository! I hope you find it useful and informative. Feel free to explore the code, customize it according to your needs, and contribute to its development.
+
+If you have any questions, suggestions, or issues, please don't hesitate to open an issue or submit a pull request. Your feedback and contributions are greatly appreciated.
+
+Happy coding and enjoy using the WhatsApp Bot! 🚀
